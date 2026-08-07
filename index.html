@@ -1,43 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私政策</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="时序万年历隐私政策。">
+  <title>时序万年历｜隐私政策</title>
+  <style>
+    :root { color-scheme: light; --accent: #ef5360; --ink: #241f1f; --muted: #6f6764; --line: #eee4df; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 8% 4%, rgba(239, 83, 96, 0.13), transparent 28rem),
+        radial-gradient(circle at 95% 95%, rgba(255, 183, 125, 0.18), transparent 30rem),
+        #fffaf6;
+      line-height: 1.78;
+    }
+    main { width: min(880px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0 72px; }
+    header, section {
+      padding: 32px 38px;
+      margin-bottom: 18px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 16px 45px rgba(78, 48, 38, 0.07);
+    }
+    header { padding-top: 42px; padding-bottom: 42px; }
+    .badge { color: var(--accent); font-weight: 700; }
+    h1 { margin: 10px 0 8px; font-size: clamp(34px, 6vw, 50px); line-height: 1.2; }
+    h2 { margin: 0 0 12px; font-size: 23px; }
+    p, li { color: var(--muted); }
+    ul { padding-left: 22px; }
+    strong { color: var(--ink); }
+    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .summary { padding: 18px 20px; border-radius: 16px; background: #fff1f2; color: #6d3a3e; }
+    footer { text-align: center; color: #99908c; font-size: 14px; padding-top: 16px; }
+    @media (max-width: 640px) { main { padding-top: 24px; } header, section { padding: 24px; border-radius: 21px; } }
+  </style>
 </head>
 <body>
-    <h1>隐私政策</h1>
-    <p>感谢您使用！我们非常重视您的隐私，并承诺不会收集任何个人信息。</p>
+  <main>
+    <header>
+      <div class="badge">时序万年历</div>
+      <h1>隐私政策</h1>
+      <p>生效日期：2026 年 8 月 7 日</p>
+      <div class="summary">我们不展示广告，也不会出售用户数据。日程、重要日、设置和用户选择的照片默认保存在设备本地。只有当用户主动使用“意见反馈”时，相关反馈数据才会通过网络提交。</div>
+    </header>
 
-    <h2>数据收集</h2>
-    <p>本应用不会收集或存储任何用户数据。</p>
+    <section>
+      <h2>1. 本地保存的数据</h2>
+      <p>为了提供日历、倒数日和桌面小组件功能，以下内容会保存在设备本地以及 App 与 Widget 共享的本地容器中：</p>
+      <ul>
+        <li>用户创建的日程、开始与结束时间、重复规则、提醒设置和备注；</li>
+        <li>生日、纪念日、节日等重要日及其显示样式；</li>
+        <li>首页样式、小组件选项、事件颜色等偏好设置；</li>
+        <li>用户主动从照片选择器中选取并用于重要日卡片或小组件的图片副本。</li>
+      </ul>
+      <p>这些内容不会为了广告或用户画像而上传。卸载 App 可能会导致本地数据被系统删除，请在卸载前自行确认重要内容。</p>
+    </section>
 
-    <h2>第三方服务</h2>
-    <p>本应用不包含任何第三方服务或广告。</p>
+    <section>
+      <h2>2. 通知权限</h2>
+      <p>当用户为日程或重要日开启提醒时，App 会请求系统通知权限，并在设备上创建本地通知。通知内容和触发时间由系统在本地处理。用户可以随时在系统设置中关闭通知权限。</p>
+    </section>
 
-    <h2>联系我们</h2>
-    <p>
-        如果您对隐私政策有任何疑问，请通过以下方式联系我们：<br>
-        邮箱：<a href="time_support@aliyun.co">time_support@aliyun.co</a>
-    </p>
+    <section>
+      <h2>3. 照片访问</h2>
+      <p>App 使用系统照片选择器，仅在用户主动选择照片时读取被选中的图片。App 不会扫描完整相册，也不会将所选照片上传到我们的服务器。照片用于用户自己的重要日卡片和桌面小组件。</p>
+    </section>
+
+    <section>
+      <h2>4. 意见反馈与网络数据</h2>
+      <p>“意见反馈”是用户主动选择使用的功能。提交反馈时，我们会处理以下数据：</p>
+      <ul>
+        <li><strong>反馈内容：</strong>用户输入的问题、建议以及后续追问；</li>
+        <li><strong>联系方式：</strong>仅在用户自愿填写时提交；</li>
+        <li><strong>随机设备标识：</strong>App 在本地生成的随机 UUID，用于让同一设备查询反馈记录和开发者回复。它不是广告标识符，也不用于跨 App 跟踪。</li>
+      </ul>
+      <p>这些数据通过 HTTPS 发送到反馈服务的云端存储，仅用于接收反馈、回复用户、排查问题和改进产品。我们不会将其用于广告，也不会出售给第三方。反馈服务由云数据服务提供商承载，数据会在实现上述目的所需期间保存；用户可以通过支持邮箱申请查询或删除其反馈数据。</p>
+    </section>
+
+    <section>
+      <h2>5. 广告、分析与跟踪</h2>
+      <p>时序万年历不包含广告展示，不使用广告标识符，不会为了广告目的跟踪用户跨 App 或跨网站的活动。当前版本不使用第三方广告 SDK。</p>
+    </section>
+
+    <section>
+      <h2>6. 数据安全与用户选择</h2>
+      <p>我们采取合理措施保护通过反馈功能提交的数据。用户可以不使用意见反馈、不填写联系方式，也可以拒绝通知权限或不选择照片，这不会影响基本日历功能。</p>
+      <p>如需访问、更正或删除通过反馈功能提交的信息，请发送邮件并说明设备内反馈记录所显示的时间与主题，以便我们协助定位。</p>
+    </section>
+
+    <section>
+      <h2>7. 儿童隐私</h2>
+      <p>本应用不以收集儿童个人信息为目的。如果监护人认为儿童通过反馈功能提交了个人信息，请联系我们处理删除。</p>
+    </section>
+
+    <section>
+      <h2>8. 政策更新与联系我们</h2>
+      <p>当功能或数据处理方式发生变化时，我们可能更新本政策，并在本页面标注新的生效日期。</p>
+      <p>隐私问题、数据请求或其他咨询请联系：<a href="mailto:time_support@aliyun.com">time_support@aliyun.com</a></p>
+      <p>技术支持：<a href="https://jacklv-coder.github.io/timeagain/">时序万年历技术支持</a></p>
+    </section>
+
+    <footer>时序万年历 · 纯净无广告日历</footer>
+  </main>
 </body>
 </html>
